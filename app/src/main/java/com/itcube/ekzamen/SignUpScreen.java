@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class SignUpScreen extends AppCompatActivity {
+public class SignUpScreen extends AppCompatActivity implements  View.OnClickListener{
 
     private EditText username;
     private EditText password;
@@ -64,5 +64,12 @@ public class SignUpScreen extends AppCompatActivity {
                 loginLocked.setText("Вход заблокирован!!!");
             }
         }
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent intentreg = new Intent(SignUpScreen.this,reg_screen.class);
+        startActivity(intentreg);
+
     }
 }

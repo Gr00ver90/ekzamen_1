@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".reg_screen">
+
+    <Button
+        android:id="@+id/button_sign"
+        android:layout_width="343dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/black"
+        android:text="У меня уже есть аккаунт"
+        android:onClick="onClick"
+        android:textColor="@color/pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_reg"
+        app:strokeColor="#474747" />
+
+    <Button
+        android:id="@+id/button_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnstyle"
+        android:text="Зарегистрироваться"
+        android:onClick="onClick"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_password3" />
+
+    <EditText
+        android:id="@+id/edit_password2"
+        android:layout_width="343dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/style"
+        android:ems="10"
+        android:hint="   Пароль"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_mail" />
+
+    <EditText
+        android:id="@+id/edit_password3"
+        android:layout_width="343dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/style"
+        android:ems="10"
+        android:hint="   Пароль"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_password2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="219dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="WorldCinema"
+        android:textColor="#DB43DE"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="343dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/style"
+        android:ems="10"
+        android:hint="   E-mail"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edit_surname"
+        android:layout_width="343dp"
+        android:layout_height="44dp"
+
+        android:layout_marginTop="15dp"
+        android:background="@drawable/style"
+        android:ems="10"
+        android:hint="   E-mail"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_name" />
+
+    <EditText
+        android:id="@+id/edit_mail"
+        android:layout_width="343dp"
+        android:layout_height="44dp"
+
+        android:layout_marginTop="15dp"
+        android:background="@drawable/style"
+        android:ems="10"
+        android:hint="   E-mail"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_surname" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

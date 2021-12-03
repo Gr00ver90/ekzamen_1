@@ -10,7 +10,7 @@ import android.view.WindowManager;
 
 public class SplashScreen extends AppCompatActivity {
 
-    private int time_loading = 4000;
+    private int time_loading = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
